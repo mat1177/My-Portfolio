@@ -251,7 +251,7 @@ a:hover img:first-child {
   height: auto;
 }
 
-#text {
+.text {
   visibility: visible;
   color: #131313;
   font-style: italic;
