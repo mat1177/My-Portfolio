@@ -203,7 +203,7 @@ a:hover img:first-child {
   padding-bottom: 5%;
 }
 
-#container1 {
+.container1 {
   float: left;
   width: 50%;
   overflow: hidden;
