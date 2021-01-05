@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Matt's Aviation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://use.fontawesome.com/247a5f5ab4.js"></script>
+  <script type="text/javascript" src="js/myScript.js"></script>  
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+        <img id="logo" src="img/lolo.jpg" alt="logo">
+        <h1>Matt's Aviation</h1>
+    </div>
+  </header>
+  
+  <div class="main_menu" id="myMenu">
+    <a href="index.html" class="active">Home</a>
+    <a href="airport.html">Airport</a>
+    <a href="aircraft.html">Aircraft</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+  </div>
+  
+
+  <div class="container-form">
+    <h2>Contact Form</h2>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="title">Title</label>
+      </div>
+
+      <div class="col-75">
+        <select id="title" name="Title">
+          <option value="Mrs">Mrs</option>
+          <option value="Mr">Mr</option>
+          <option value="Madame">Madame</option>
+          <option value="Sir">Sir</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="firstname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="firstname" name="firstname" placeholder="Your first name..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="lastname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="email">E-Mail</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="E-Mail" placeholder="Your e-mail..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Your message.." style="height:150px"></textarea>
+      </div>
+    </div>
+    
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </div>
+  
+  <footer id="footer">
+    <a href="https://www.facebook.com/MattsAviationChannel" class="fa fa-facebook" style="font-size:24px" target="_blank"></a>
+    <a href="https://twitter.com/matthiashaenni" class="fa fa-twitter" style="font-size:24px" target="_blank"></a>
+    <p id="copyright">&copy; Copyright 2020 by Matthias Haenni</p>
+  </footer>
+        
+</body>
+</html>
+

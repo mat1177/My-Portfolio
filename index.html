@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Matt's Aviation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://use.fontawesome.com/247a5f5ab4.js"></script>
+  <script type="text/javascript" src="js/myScript.js"></script>  
+</head>
+  
+<body>
+  <header>
+    <div class="header-container">
+      <img id="logo" src="img/lolo.jpg" alt="logo">
+      <h1>Matt's Aviation</h1>
+    </div>
+  </header>
+    
+  <div class="main_menu" id="myMenu">
+    <a href="index.html" class="active">Home</a>
+    <a href="airport.html">Airport</a>
+    <a href="aircraft.html">Aircraft</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+  </div>
+  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myMenu");
+        if (x.className === "main_menu") {
+          x.className += " responsive";
+          } else {
+          x.className = "main_menu";
+          }
+        }
+  </script>
+
+  <h3 id="page-one">Welcome on my Website!</h3>
+  
+  <div class="container-home">
+     <a>
+      <img src="img/img_06.jpeg" alt="TEXT" width="100%" height="auto"> 
+      <img src="img/img_05.jpeg" alt="TEXT" width="100%" height="auto">
+    </a> 
+    <div id="text-home">
+      <p>Hi there!
+        <br>
+        <br>
+        My name is Matt. I often film at Bern Airport in Switzerland irrespective of whether it rains, storms, snows or the sun glares.
+      There is no such thing as bad weather, only the wrong clothes. Being outdoors all year round is also a great way of keeping fit.
+      I also visit other airports occasionally.</p>
+    </div> 
+  </div> 
+
+  <br> 
+
+  <div class="containter-home-one">
+    <div class="container-home-two">
+      <h3>Video Trailer</h3>
+      <div class="youtube-container"><iframe src="https://www.youtube.com/embed/h9KYG19aHPc"  frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+        <div id="text-home-two">
+          <p>Its is all about aviation</p>
+        </div>   
+    </div>
+  </div>
+
+  <footer id="footer">
+    <a href="https://www.facebook.com/MattsAviationChannel" class="fa fa-facebook" style="font-size:24px" target="_blank"></a>
+    <a href="https://twitter.com/matthiashaenni" class="fa fa-twitter" style="font-size:24px" target="_blank"></a>
+    <p id="copyright">&copy; Copyright 2020 by Matthias Haenni</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
