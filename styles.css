@@ -246,6 +246,11 @@ a:hover img:first-child {
   padding: 5px 10px;
 }
 
+.img {
+widht: 100%;
+height: auto;
+}
+
 #text {
   visibility: visible;
   color: #131313;
