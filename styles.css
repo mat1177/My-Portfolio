@@ -101,16 +101,15 @@ h2 {
 }
 
 #footer {
-  background-color: #ffc73a;
-  text-align: center;
-  padding: 1% 1% 2% 1%;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #ffc73a;
+   color: white;
+   text-align: center;
 }
 
-#content::after{
-  content: "";
-  display: block;
-  height: -75px;
-}
 
 
 /* Homepage */
