@@ -1,0 +1,330 @@
+/* Global Settings */
+
+header {
+  display: block;
+  width: 100%;
+  background-color:#0051ff;
+  background-image: radial-gradient(#ffc73a, #006eff);
+  color: #ffffff;
+  text-align: center;
+  padding: 8px;
+  overflow: hidden;
+}
+
+#logo {
+  float: left;
+  width: 9%;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+.header-container {
+  padding: 1%;
+  text-align: center;
+  margin: 1%;
+  font-size:20px;
+  overflow: hidden;
+}
+
+.main_menu {
+  overflow: hidden;
+  background-color: #7e7e7e;
+}
+
+.main_menu a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main_menu a:hover {
+  background-color: #ffc73a;
+  color: #111111;
+}
+
+.main_menu .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .main_menu a:not(:first-child) {display: none;}
+  .main_menu a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .main_menu.responsive {position: relative;}
+    .main_menu.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .main_menu.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color:  #5cbeff;
+  color:#1c1b1b;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 4.0vw;
+  -webkit-text-stroke: 1px black;
+}
+
+h2 {
+  font-size: 3.0vh;
+}
+
+
+#copyright {
+  color: #1c1b1b;
+}
+
+#footer {
+  background-color: #ffc73a;
+  text-align: center;
+  padding: 1% 1% 2% 1%;
+}
+
+#content::after{
+  content: "";
+  display: block;
+  height: -75px;
+}
+
+
+/* Homepage */
+
+#page-one {
+  padding-left: 10px;
+}
+
+.container-home {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 5%;
+  padding-bottom: 2%;
+}
+
+a img:last-child {
+  display: none;  
+}
+a:hover img:last-child {
+  display: block;  
+}
+a:hover img:first-child {
+  display: none;  
+}
+
+#text-home {
+  padding-left: 2%;
+  float: left;
+  width: 75%;
+  text-align: justify;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 600px) {
+  .container-home {
+    display: block;
+  } #text-home {
+    display: block;
+    width: 100%;
+  }
+}
+
+.containter-home-one {
+  padding-bottom: 5%;
+}
+
+.container-home-two {
+  max-width: 100%;
+  width: 750px;
+  margin: auto;
+  border-style: double;
+  border-width: 8px;
+  border-color: #DAA520	;
+  padding: 2px 15px 2px 15px;
+  margin-bottom: 2%;
+  text-align: center;
+  }
+
+.container-home-two:hover {
+  border-style: solid;
+  }
+
+.youtube-container {
+  position: relative;
+  padding-bottom: 56.25%;  /* 16:9 */
+  padding-top: 0;
+  height: 0;
+  overflow: hidden;
+  }
+
+.youtube-container iframe,
+.youtube-container object,
+.youtube-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Subpage Airport */
+
+#wrapper {
+  display: absolute;
+  margin-top: 1%;
+  margin-right: 2%;
+  padding-bottom: 5%;
+}
+
+#container1 {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+  padding: 2%;
+}
+
+#maps {max-width: 100%;}
+
+.heli {
+  border: 3px dotted #AB8D3F;
+  width: 30%;
+  text-align: center;
+}
+
+.heli:hover {
+  background-color: #AB8D3F;
+}
+
+@media screen and (max-width: 600px) {
+  #container1 {
+    width: 100%;
+  }
+}
+
+
+/* Subpage Aircraft */
+
+#page-three {
+  padding-left: 10px;
+}
+
+.container2 {
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+.imagebox {
+  float: left;
+  width: 50%;
+  padding: 5px 10px;
+}
+
+#text {
+  visibility: visible;
+  color: #131313;
+  font-style: italic;
+  margin-top: 3px;
+  font-size: 2vmin;
+}
+ 
+@media screen and (max-width: 600px) {
+  .imagebox {
+    width: 100%;
+  } #text {
+    color: #740000;
+    font-size: 2vmin;
+  }
+}
+
+
+/* Subpage Contact Form */
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 5px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #d4d4d4;
+  color:#121212;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #15b100;
+}
+
+.container-form {
+  border-radius: 5px;
+  background-color: #5cbeff;
+  padding: 20px;
+  padding-bottom: 5%;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
