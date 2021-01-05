@@ -262,7 +262,7 @@ a:hover img:first-child {
 @media screen and (max-width: 600px) {
   .imagebox {
     width: 100%;
-  } #text {
+  } .text {
     color: #740000;
     font-size: 2vmin;
   }
